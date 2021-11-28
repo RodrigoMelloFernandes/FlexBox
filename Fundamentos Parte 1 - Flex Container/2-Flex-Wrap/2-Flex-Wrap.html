@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://kit.fontawesome.com/e258bd240c.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="Css/style.css">
+  <link rel="stylesheet" href="Css/containerItem.css">
+  <link rel="stylesheet" href="Css/containerTexto.css">
+
+  <title>Fundamentos - Flex Wrap</title>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="texto">
+      <h2>Flex Wrap</h2>
+      <p>
+        O Flex Wrap define se os itens devem ou não quebrar a linha.
+        Por padrão eles não quebram linha, ou seja , eles vem definidos como Row, isso faz com que os flex itens sejam
+        compactados além do limite do conteúdo.
+      </p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="texto">
+      <h2>No Wrap</h2>
+      <p>É o padrão, ou seja, não permite a quebra de linha, temos duas situações, uma onde os elementos se encaixam
+        dentro do container, e outra eles começam a vazar.</p>
+    </div>
+    <div class="elemento">
+      <div class="flex-container nowrap">
+        <div class="item blue">
+          <div class="item"><i class="fas fa-user-astronaut"></i></div>
+        </div>
+        <div class="item blue">2</div>
+        <div class="item blue">3</div>
+        <div class="item blue">4</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="texto">
+      <h2>Wrap</h2>
+      <p>O wrap permite a quebra de linha assim que um dos flex itens não seja mais compactado dentro do container,
+        passando o elemento para a linha de baixo. <br>
+        Se o max-width do flex-container fosse aumentado para 400px os itens passam para a linha de cima, porém se for
+        um tamanho que não comporta o item, exemplo 310 px, vamos ter uma sobra no container mas o item vai respeitar o
+        container e se manter dentro dos limites dele e vai jogar o outro elemento para a linha de baixo.
+      </p>
+    </div>
+    <div class="elemento">
+      <div class="flex-container wrap">
+        <div class="item blue">
+          <div class="item"><i class="fas fa-user-astronaut"></i></div>
+        </div>
+        <div class="item blue">2</div>
+        <div class="item blue">3</div>
+        <div class="item blue">4</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="texto">
+      <h2>Wrap-Reverse</h2>
+      <p>Permite a quebra de linha assim que um dos flex itens não puder mais ser compactado, porém na direção contrária
+        da linha acima.
+      </p>
+    </div>
+    <div class="elemento">
+      <div class="flex-container wrap-reverse">
+        <div class="item blue"><i class="fas fa-user-astronaut"></i></div>
+        <div class="item blue">2</div>
+        <div class="item blue">3</div>
+        <div class="item blue">4</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
