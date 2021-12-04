@@ -1,0 +1,49 @@
+/* Trata as propriedades de fora do container Elemento */
+
+.container .elemento{
+  display: flex;
+  border: none;
+  justify-content: center;
+}
+
+/* Trata as propriedades de dentro do container Elemento */
+
+.flex-container{
+  border: 1px solid white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  margin: 10px;
+}
+
+
+.flex-item{
+  background: blueviolet;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  text-align: center;
+  margin: 5px;
+
+}
+
+/* Trata das propriedades que foram passadas na aula */
+
+.row{
+  flex-direction: row;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.column{
+  float: left;
+  flex-direction: column;
+}
+
+.column-reverse{
+  flex-direction: column-reverse;
+}

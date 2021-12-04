@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://kit.fontawesome.com/e258bd240c.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="Css/style.css">
+  <link rel="stylesheet" href="Css/containerItem.css">
+  <link rel="stylesheet" href="Css/containerTexto.css">
+
+  <title>Fundamentos - Align Content</title>
+  <style>
+
+
+    .stretch{
+      align-content: stretch;
+    }
+
+    .center{
+      align-content: center;
+    }
+
+    .flex-start{
+      align-content: flex-start;
+    }
+
+    .flex-end{
+      align-content: flex-end;
+    }
+
+    .space-around{
+      align-content: space-around;
+    }
+
+    .space-between{
+      align-content: space-between;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="texto">
+      <h2>Align Content</h2>
+      <p>Propriedade resposável por tratar do eixo vertical do container, ou seja trabalhar o orientação das linhas do container.
+      <br>
+      È preciso que o container utilize quebra de linhas e a altura do container seja maior que a soma das linhas dos itens para que a propriedade funcione.
+      <br>
+    
+      space-between: cria um espaçamento igual entre os elementos. 
+      <br>
+      space-around: os espaçaçamentos do meio são duas vezes maiores que o final e inicial.
+      <br>
+      </p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="texto">
+      <h2>Stretch</h2>
+      <p>
+        Comportamento padrão, flex itens crescem igualmente pegando o maior elemento da linha e crescendo os demais referentes a esse elemento.
+      </p>
+    </div>
+    <div class="elemento">
+      <div class="flex-container stretch">
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="texto">
+      <h2>Center</h2>
+      <p>
+        Pega a sobra de espaço do container e destribui de maneira porporcional levando os itens para a parte vertical do container com essa distribuição de margem.
+      </p>
+    </div>
+    <div class="elemento">
+      <div class="flex-container center">
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="texto">
+      <h2>Flex-Start</h2>
+      <p>
+        Comprime conteúdo e leva pro topo do container e o bottom fica com o e restante da sobra de conteúdo.
+      </p>
+    </div>
+    <div class="elemento">
+      <div class="flex-container flex-start">
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="texto">
+      <h2>Flex-End</h2>
+      <p>
+        Inverso ao flex-start, conteúdo vai para o bottom e espaço restante fica na parte de cima.
+      </p>
+    </div>
+    <div class="elemento">
+      <div class="flex-container flex-end">
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="texto">
+      <h2>Space-Around</h2>
+      <p>
+        Os espaçamentos do meio são duas vezes maiores que o final e inicial.
+      </p>
+    </div>
+    <div class="elemento">
+      <div class="flex-container space-around">
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="texto">
+      <h2>Space-Between</h2>
+      <p>
+        Os espaçamentos do meio são duas vezes maiores que o final e inicial.
+      </p>
+    </div>
+    <div class="elemento">
+      <div class="flex-container space-between">
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+        <div class="item"><i class="fas fa-user-astronaut"></i> Item</div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

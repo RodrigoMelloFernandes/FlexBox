@@ -1,0 +1,59 @@
+/* Trata as propriedades de fora do container Elemento */
+
+.container .elemento{
+  display: flex;
+  border: none;
+  justify-content: center;
+}
+
+/* Trata as propriedades de dentro do container Elemento */
+
+.flex-container{
+  width: 300px;
+  border: 1px solid white;
+  margin-bottom: 10px;
+  display: flex;
+  margin: 10px;
+}
+
+.align-container{
+  align-items: center;
+}
+
+.item{
+  background-color: blueviolet;
+  font-size: 24px;
+  text-align: center;
+  margin: 5px;
+
+}
+
+/* Trata das propriedades que foram passadas na aula */
+
+.center{
+  align-self: center;
+}
+
+.start{
+  align-self: flex-start;
+}
+
+.end{
+  align-self: flex-end;
+}
+
+.baseline{
+  align-self: baseline;
+}
+
+.stretch{
+  align-self: stretch;
+}
+
+.auto{
+  align-self: auto;
+}
+
+.direction{
+  flex-direction: column;
+}

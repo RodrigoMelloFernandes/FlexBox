@@ -1,0 +1,49 @@
+/* Trata as propriedades de fora do container Elemento */
+
+.container .elemento{
+  display: flex;
+  border: none;
+  justify-content: center;
+}
+
+/* Trata as propriedades de dentro do container Elemento */
+
+.flex-container {
+  width: 300px;
+  border: 1px solid white;
+  display: flex;
+  margin: 10px;
+}
+
+.items {
+  background-color: blueviolet;
+  text-align: center;
+  margin: 5px;
+  font-size: 24px
+}
+
+/* Trata das propriedades que foram passadas na aula */
+
+.bauto {
+  flex-basis: auto;
+}
+
+.fg-0 {
+  flex-grow: 0;
+}
+
+.fg-1 {
+  flex-grow: 1;
+}
+
+.fg-2 { /* fator de crescimento em 2 */
+  flex-grow: 2;
+}
+
+.b-0 {
+  flex-basis: 0;
+}
+
+.w100 {
+  flex-basis: 100px;
+}

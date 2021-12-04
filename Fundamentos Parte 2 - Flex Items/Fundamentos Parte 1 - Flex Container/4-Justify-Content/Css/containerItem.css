@@ -1,0 +1,51 @@
+/* Trata as propriedades de fora do container Elemento */
+
+.elemento{
+  display: flex;
+  border: none;
+  justify-content: center;
+}
+
+/* Trata as propriedades de dentro do container Elemento */
+
+.flex-container{
+  border: 1px solid white;
+  width: 300px;
+  margin: 0;
+  display: flex;
+  margin-left: 10px;
+}
+
+.item{
+  background-color: blueviolet;
+  margin: 5px;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* Trata das propriedades que foram passadas na aula */
+
+.flex-start{
+  justify-content: flex-start;
+}
+
+.flex-end{
+  justify-content: flex-end;
+}
+
+.center{
+  justify-content: center;
+}
+
+.space-between{
+  justify-content: space-between;
+}
+
+.space-around{
+  justify-content: space-around;
+}
+
+.column{
+  flex-direction: column;
+  min-height: 200px;
+}

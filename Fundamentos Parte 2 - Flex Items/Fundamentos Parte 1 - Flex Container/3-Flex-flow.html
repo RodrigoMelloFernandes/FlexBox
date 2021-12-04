@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://kit.fontawesome.com/e258bd240c.js" crossorigin="anonymous"></script>
+
+  <title>Fundamentos - Flex Flow</title>
+  <style>
+    body{
+      background-color: #1e1e1e;
+      color: white;
+      font-family: Verdana;
+    }
+
+    .flex-container{
+      border: 1px solid white;
+      display: flex;
+      max-width: 500px;
+      
+    }
+
+    .container{
+      padding: 5px 5px 5px 0;
+      border: none;
+      margin-bottom: 5px;
+        }
+
+    .container .texto{
+      margin-bottom: 10px;
+      border: none
+    }
+
+    .container h1,h2,p{
+      margin: 4px;
+      margin-left: 10px;
+    }
+
+
+    .container .elemento{
+      margin: 0;
+      padding: 0;
+      display: flex;
+      border: none;
+      padding-left: 10px;
+    }
+
+    .wrap{
+      flex-flow: row wrap;
+    }
+
+    .wrap-reverse{
+      flex-flow: row wrap-reverse
+    }
+
+    .r-nowrap{
+      flex-flow: row-reverse nowrap;
+    }
+
+    .r-wrap{
+      flex-flow: row-reverse wrap;
+    }
+
+    .rr-wrap{
+      flex-flow: row-reverse wrap-reverse
+    }
+
+    .item{
+      background-color: blueviolet;
+      margin: 5px;
+      text-align: center;
+      width: 100px;
+      line-height: 50px;
+      font-size: 24px;
+    }
+
+    .default{
+      flex-flow: row nowrap;
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="texto">
+      <h2>Flex-Flow</h2>
+      <p>È um atalho para as propriedades flex-direction e flex-wrap. <br>
+        Porém seu uso não é tão comum, visto que, quando mudamos o flex-direction para column, mantemos o padrão do flex-wrap que é nowrap.
+        
+        O ideal é usar ele para não termos que usar duas linhas para direcionar as propriedades, ou seja usamos uma linha para passar para o css duas propriedades de uma vez.
+      </p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="texto">
+      <h1>Default: row nowrap</h1>
+    </div>
+    <div class="elemento">
+      <div class="flex-container default">
+        <div class="item"><i class="fas fa-user-astronaut"></i></div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="texto">
+      <h1>Row Wrap</h1>
+      <p>Os elementos são alinhados em linha e quebram a linha conforme o tamanho do container.
+      </p>
+    </div>
+    <div class="elemento">
+      <div class="flex-container wrap">
+        <div class="item"><i class="fas fa-user-astronaut"></i></div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>   
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="texto">
+      <h1>Row Wrap-reverse</h1>
+      <p>Os items se alinham, porém a cada novo complemento de linha eu trago esses elementos pra primeira linha que estou escrevendo e vou levando os elementos que auto completaram o bloco do nosso container pra linha de baixo.
+      </p>
+    </div>
+    <div class="elemento">
+      <div class="flex-container wrap-reverse">
+        <div class="item"><i class="fas fa-user-astronaut"></i></div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>   
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="texto">
+      <h1>Row reverse no-wrap</h1>
+      <p>Aqui temos a inversão dos itens na mesma linha.
+      </p>
+    </div>
+    <div class="elemento">
+      <div class="flex-container r-nowrap">
+        <div class="item"><i class="fas fa-user-astronaut"></i></div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>   
+        <div class="item">7</div>  
+        <div class="item">8</div>  
+        <div class="item">9</div> 
+        <div class="item">10</div>   
+      </div> 
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="texto">
+      <h1>Row reverse wrap</h1>
+      <p>Os items estão do lado oposto em linha na parte de cima da direita para esquerda e alinhando os itens na próxima linha.
+      </p>
+    </div>
+    <div class="elemento">
+      <div class="flex-container r-wrap">
+        <div class="item"><i class="fas fa-user-astronaut"></i></div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>   
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="texto">
+      <h1>Row reverse wrap-reverse</h1>
+      <p>Itens alinhados do lado oposto começando de baixo para cima
+      </p>
+    </div>
+    <div class="elemento">
+      <div class="flex-container rr-wrap">
+        <div class="item"><i class="fas fa-user-astronaut"></i></div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>   
+      </div>
+    </div>
+  </div>
+ 
+</body>
+</html>

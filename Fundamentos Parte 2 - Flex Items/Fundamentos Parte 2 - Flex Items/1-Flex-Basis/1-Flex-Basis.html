@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/e258bd240c.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/containerItem.css">
+    <link rel="stylesheet" href="Css/containerTexto.css">
+
+    <title>Fundamentos - Flex Basis</title>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="texto">
+            <h1>Basis auto</h1>
+            <p>Aqui o elemento A cresce com um tamanho base automático tentando ocupar todo o restante do espaço ocupado
+                no container <br> Fator de crescimento é a propriedade fg-1,</p>
+        </div>
+        <div class="elemento">
+            <div class="flex-container">
+                <div class="items bauto fg-1"><i class="fas fa-user-astronaut"></i></div>
+                <div class="items">2</div>
+                <div class="items">3</div>
+                <div class="items bauto fg-1"><i class="fas fa-user-astronaut"></i></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="texto">
+            <h2>Basis auto segundo exemplo</h2>
+            <p>Aqui os elementos se adequam conforme conteúdo interno <br> Depois é feito a distribuição dos elementos
+                conforme os espaços que restam.</p>
+        </div>
+        <div class="elemento">
+            <div class="flex-container">
+                <div class="items bauto fg-1"><i class="fas fa-user-astronaut"></i></div>
+                <div class="items bauto fg-1">2</div>
+                <div class="items bauto fg-1">3</div>
+                <div class="items bauto fg-1"><i class="fas fa-user-astronaut"></i></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="texto">
+            <h2>0 (zero)</h2>
+            <p>Colocando o basis em zero e um flex grow proporcional para todos os elementos, os itens serão colocados
+                ao máximo do fator de crescimento referente. <br>
+                Se aumentarmos o conteúdo ou expandi-lo, ele vai respeitar essa proporcionalidade de espaçamento entre
+                os itens,<br>
+                todos os itens vão ter o mesmo tamanho até que ele não consiga comprimir o conteúdo restante. </p>
+        </div>
+        <div class="elemento">
+            <div class="flex-container">
+                <div class="items b-0 fg-1"><i class="fas fa-user-astronaut"></i></div>
+                <div class="items b-0 fg-1">2</div>
+                <div class="items b-0 fg-1">3</div>
+                <div class="items b-0 fg-1"><i class="fas fa-user-astronaut"></i></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="texto">
+            <h2>Basis + width</h2>
+            <p>Aqui o fg-2 tenta ocupar todo o container e destribui o espaço restante entre os itens.</p>
+        </div>
+        <div class="elemento">
+            <div class="flex-container">
+                <div class="items w-100 fg-2"><i class="fas fa-user-astronaut"></i></div>
+                <div class="items w-100 fg-2">2</div>
+                <div class="items w-100 fg-2">3</div>
+                <div class="items w-100 fg-2"><i class="fas fa-user-astronaut"></i></div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
